@@ -4,6 +4,8 @@
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -17,10 +19,14 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
+  padding: 100px;
   text-align: center;
   background: #1abc9c;
   color: white;
+  background-image: url('umppp.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 50%;
 }
 
 /* Increase the font size of the heading */
@@ -112,48 +118,154 @@ body {
 </head>
 <body>
 
-<div class="header">
-  <h1>My First website</h1>
-  <p>A website created by MOHAMAD IQBALHAKIM.</p>
+<div class="header" id="home">
+  <h1>My First PORTFOLIO</h1>
+  <p>A portfolio created by MOHAMAD IQBALHAKIM.</p>
+  
 </div>
-
-<div class="navbar">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#" class="right">Link</a>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#service" class="w3-bar-item w3-button">SKILL</a>
+      <a href="#project" class="w3-bar-item w3-button">EXPERIENCE</a>
+      <a href="#achive" class="w3-bar-item w3-button">ACHIVEMENT</a>
+      <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+    </div>
+  </div>
+</div>
+<!--<div class="navbar">
+  <div class="w3-top w3-bar">
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT ME</a>
+  <a href="#service">SERVICES/SKILL</a>
+  <a href="#project">PROJECT/WORKS</a>
+  <a href="#achive">ACHIVEMENT/AWARD</a>
+  <a href="#contact">CONTACT ME</a>
+  <a href="#" class="right">Link</a> -->
 </div>
 
 <div class="row">
-  <div class="side">
+  <div class="side" id="about">
     <h2>About Me</h2>
-    <h2>NAME: MOHAMAD IQBALHAKIM BIN OTHMAN</h2>
+    <h2>MOHAMAD IQBALHAKIM BIN OTHMAN</h2>
     <h5>Photo of me:</h5>
     <img src="IQBALHAKIM.jpeg" alt="Forest" width="50%">
-    <p>saya hensem..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <img src="konoha.jpeg" alt="Forest" width="50%">
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+    <p>I am iqbal, 23 years old, from Kuala Lipis, Pahang. I have 4 siblings and I am the 3rd child. I take diploma teknologi elektronik at kolej vokasional shas kuala lipis,pahang. </p>
+    <h3>HOBBIES</h3>
+    <p>My hobby is playing badminton,volleyball and Hiking</p>
+    <img src="hiking.jpg" alt="Forest" width="50%">
+    <img src="badminton.jpg" alt="Forest" width="50%">
+    <img src="bola.jpg" style="width:50%">
+    <!--<div class="bol" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>-->
   </div>
-  <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  <div class="main" id="service">
+    <h2>Services/Skill Offered section</h2>
+    <h5>TECHNICAL SKILLS:</h5>
+    <p>Able to do audio and video maintenance.</p>
+    <p>Able to perform pneumatic and hydraulic work.</p>
+    <p>Able to run a PLC programming</p>
+    <p>Able to perform supervisory skill</p>
+    <p>Know basic computer literacy (MS-Word, MSPowerPoint, MS-Excel)</p>
+    <p>Able to make electronic circuit using Proteus
+      8.4</p>
+    <p>Able to do Program robot use Arduino</p>
+    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="drill.JPG" style="width:100%">
+        <img src="hidraulik.JPG" style="width:100%">
+        <img src="mesin.JPG" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="pcb.JPG" style="width:100%">
+        <img src="solder.JPG" style="width:100%">
+        <img src="electro.JPG" style="width:100%">
+        <img src="proteus.JPG" style="width:100%">
+      </div>
+
+    <p>this picture is all about my service or skill that i can do and provide to anyone that want my skill.</p>
+    <!--<p>This is my picture for service and skill that i can do</p>-->
     <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <div class="main" id="project"></div>
+    <h2>Past Project or Work Experience section</h2>
+    <h5>AUDIO VISUAL MAINTENANCE AND SERVICES, Feb 2016 to present</h5>
+    <p>Partime Work
+      - Repair Faulty speaker
+      - Repair Faulty Equalizer
+      - Monitoring, Testing and Maintaining the
+      wiring lamp</p>
+      <p>As s support team for production
+        - Provide pa system for better assembly
+        process
+        - Modify equalizer
+        - Provide quick response and solution</p>
+    <h5>INTERN AT MEDIA PRIMA, Jan - May 2019 to present</h5>
+    <p>- Department technical support
+      - Provide monitor, Repair electronic items</p>
+
+    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="PTA.jpg" style="width:100%">
+        <img src="projek.jpg" style="width:100%">
+        <img src="masjid.JPG" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="pa.JPG" style="width:100%">
+        <img src="tv3.jpg" style="width:100%">
+        <img src="agri.jpg" style="width:100%">
+        <img src="media.jpg" style="width:100%">
+      </div>
+
+    <h5>As you can see this picture is my project and works experience at time that i take diploma and degree.</h5>
+    <p></p>
+    <br>
+    <div class="main" id="achive"></div>
+    <h2>Achievements/Award received section</h2>
+    <!--<h5>Title description, Sep 2, 2017</h5>-->
+    <p>STUDENT REPRESENTATIVE
+      RESIDENT STUDENTS 2 SESSION
+      2021/2022</p>
+      <p>GENESIS CLUB SESSION 2021/2022</p>
+      <p>CERTIFICATE OF PARTICIPATION WORLD OF
+        ROBOTIC NATIONAL CHAMPIONSHIP (WRC
+        PRO) 2018</p>
+        <p>STUDENT REPRESENTATIVE COUNCIL</p>
+        
+    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="sijil.JPG" style="width:100%">
+        <img src="sijil2.JPG" style="width:100%">
+        <img src="gen.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="robo.jpg" style="width:100%">
+        <img src="mpp.jpg" style="width:100%">
+        <img src="genesis.jpg" style="width:100%">
+        <img src="roboyiv.jpg" style="width:100%">
+      </div>
+    <p></p>
+    <p></p>
+  
   </div>
 </div>
 
-<div class="footer">
-  <h2>Footer</h2>
+<div class="footer" id="contact">
+  <h2>Contact Me</h2>
+  <h5>MOHAMAD IQBALHAKIM BIN OTHMAN</h5>
+  <h5>N0 10 , JALAN 2/7 TAMAN
+    MELEWAR FASA 2 GOMBAK 68100
+    KUALA LUMPUR</h5>
+    <h5>013-9490938</h5>
+    <h5>mohdiqbalhakimm@gmail.com</h5>
 </div>
 
 </body>
